@@ -11,7 +11,7 @@ void writeStringToFile(std::string listOfShops) {
     }
     else {
         convertedFile << listOfShops;
-		convertedFile.close();
+        convertedFile.close();
         std::cout << "Запись в файл успешно завершена" << std::endl;
     }
 }
