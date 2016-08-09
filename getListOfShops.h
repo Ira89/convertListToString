@@ -14,7 +14,7 @@ std::string getListOfShops(std::string fileName) {
     else {
         std::string shop = "";
         while(getline(clientFile, shop)) {
-            listOfShops += ("'" + shop + "',");
+            if(shop != "") listOfShops += ("'" + shop + "',");
         }
         clientFile.close();
     }
