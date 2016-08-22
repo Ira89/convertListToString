@@ -6,7 +6,7 @@ void writeStringToFile(std::string listOfShops) {
     std::ofstream convertedFile("convertedFile.csv");
     if(!convertedFile) {
         std::cout << "Не удалось произвести запись в файл" << std::endl;
-        std::cout << "Закройте все файлы и запустить программу еще раз" << std::endl;
+        std::cout << "Закройте все файлы и запустите программу еще раз" << std::endl;
         exit(-1);
     }
     else {
