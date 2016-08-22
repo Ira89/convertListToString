@@ -10,15 +10,12 @@ int main() {
 
     system("chcp 1251 > nul");
 
-    std::string nameClientFile = "";
-    nameClientFile = getFileName();
-
-    std::string listOfShops = "";
-    listOfShops = getListOfShops(nameClientFile);
-
+    std::string nameClientFile = getFileName();
+    std::string listOfShops = getListOfShops(nameClientFile);
     writeStringToFile(listOfShops);
-    std::cout << "Вы работаете с версией программы: 1.0.0" << std::endl << std::endl;
 
+    std::cout << "Вы работаете с версией программы: 1.0.0" << std::endl << std::endl;
     system("pause");
+
     return 0;
 }
